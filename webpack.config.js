@@ -23,10 +23,6 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         clean: true,
     },
-    resolve: {
-        // Add `.ts` and `.tsx` as a resolvable extension.
-        extensions: [".ts", ".tsx", ".js"]
-    },
     module: {
     rules: [
         {
@@ -37,12 +33,13 @@ module.exports = {
                 'sass-loader',
             ]
         },
-        { 
-            test: /\.ts$/i, 
-            use: [
-                "ts-loader"
-            ]
-        },
+        // {
+        //     test: /\.css$/i,
+        //     use: [
+        //         'style-loader',
+        //         'css-loader',
+        //     ]
+        // },
         {
             test: /\.(png|svg|jpg|jpeg|gif)$/i,
             type: 'asset/resource',
