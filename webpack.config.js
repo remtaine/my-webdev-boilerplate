@@ -11,8 +11,8 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: "Rehab Convention",
-            template: './src/html/front.html',
+            title: "Template Website",
+            template: './src/html/main.html',
             filename: 'index.html',
             favicon: './src/images/favicon.ico',
             chunks: ['main', 'header', 'footer', 'nav']
