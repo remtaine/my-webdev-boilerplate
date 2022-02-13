@@ -5,9 +5,9 @@ module.exports = {
     mode: 'production',
     entry: {
         main: './src/javascript/main.js',
-        header: './src/javascript/header.js',
-        footer: './src/javascript/footer.js',
-        nav: './src/javascript/nav.js',
+        header: './src/javascript/layout/header.js',
+        footer: './src/javascript/layout/footer.js',
+        nav: './src/javascript/layout/nav.js',
     },
     plugins: [
         new HtmlWebpackPlugin({
