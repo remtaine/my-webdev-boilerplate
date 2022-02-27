@@ -12,6 +12,8 @@ npm install webpack webpack-cli --save-dev
 "scripts": {
   "build": "webpack --mode development",
   "watch": "webpack --mode development --watch",
+  "test": "jest",
+  "test-watch": "jest --watch",
   "prod": "webpack --mode production"
 },
 
